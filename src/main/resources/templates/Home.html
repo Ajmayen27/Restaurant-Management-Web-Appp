@@ -1,0 +1,56 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Home - Restaurant Management System</title>-->
+<!--    <link rel="stylesheet" href="home.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <header>-->
+<!--        <h1>Restaurant Manager</h1>-->
+<!--        <p>Your all-in-one solution for restaurant operations</p>-->
+<!--        <p class="success" th:text="${success}"></p>-->
+<!--    </header>-->
+<!--    <div class="content">-->
+<!--        <h2>Welcome to Restaurant Manager</h2>-->
+<!--        <p>Efficiently manage your restaurant with our user-friendly system. Track orders, manage staff, and streamline operations.</p>-->
+<!--        <div class="buttons">-->
+<!--            <a th:href="@{/signin}" class="btn">Sign In</a>-->
+<!--            <a th:href="@{/signup}" class="btn">Sign Up</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Restaurant Management System</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Restaurant Manager</h1>
+        <p>Your all-in-one solution for restaurant operations</p>
+        <p class="success" th:text="${success}"></p>
+    </header>
+    <div class="content">
+        <h2>Welcome to Restaurant Manager</h2>
+        <p>Efficiently manage your restaurant with our user-friendly system. Track orders, manage staff, and streamline operations with ease.</p>
+        <div class="buttons">
+            <a th:href="@{/signin}" class="btn">Sign In</a>
+            <a th:href="@{/signup}" class="btn">Sign Up</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

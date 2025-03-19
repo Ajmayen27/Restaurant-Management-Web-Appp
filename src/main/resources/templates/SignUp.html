@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Restaurant Management System</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Restaurant Manager</h1>
+        <p>Join us! Create an account to get started.</p>
+    </header>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="#" th:action="@{/submit}" method="post" th:object="${user}">
+            <input type="text"  name="restaurantName" placeholder="Restaurant Name" th:field="*{restaurantName}" required>
+            <input type="text" name="restaurantOwnerName" placeholder="Restaurant Owner Name" th:field="*{restaurantOwnerName}" required>
+            <input type="email" name="restaurantEmailAddress" placeholder="Restaurant Email Address" th:field="*{restaurantEmailAddress}" required>
+            <input type="number" name="OwnerPhoneNumber" placeholder="Owner Phone Number" th:field="*{ownerPhoneNumber}" required>
+            <input type="text" name="restaurantAddress" placeholder="Restaurant Address" th:field="*{restaurantAddress}" required>
+            <input type="password" name="password" placeholder="Password" th:field="*{password}" required>
+            <button type="submit">Sign Up</button>
+            <p class="signin-link">Already have an account? <a href="SignIn.html">Sign In</a></p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

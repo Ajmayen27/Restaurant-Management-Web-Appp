@@ -18,9 +18,9 @@ public class UserService {
     public RestaurantUser registerUser(RestaurantUser restaurantUser) {
 
         restaurantUser.setRestaurantName(restaurantUser.getRestaurantName());
-        restaurantUser.setRestaurantAddress(restaurantUser.getRestaurantAddress());
+        restaurantUser.setRestaurantEmailAddress(restaurantUser.getRestaurantEmailAddress());
         restaurantUser.setOwnerPhoneNumber(restaurantUser.getOwnerPhoneNumber());
-        restaurantUser.setRestaurantEmailAddress(restaurantUser.getRestaurantAddress());
+        restaurantUser.setRestaurantAddress(restaurantUser.getRestaurantAddress());
         restaurantUser.setPassword(restaurantUser.getPassword());
         return userRepository.save(restaurantUser);
        

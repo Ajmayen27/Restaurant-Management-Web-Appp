@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-
 }
 
 body {
@@ -36,75 +35,48 @@ header p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.auth-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.success-container {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     width: 400px;
 }
 
-.form-container {
-    width: 100%;
-    padding: 20px;
-}
-
-.form-container h2 {
+.success-container h2 {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 20px;
 }
 
-.form-container input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.form-container input:focus {
-    border-color: #ff6f61;
-}
-
-.form-container button {
-    width: 100%;
-    padding: 12px;
-    background: #ff6f61;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
+.success-container p {
     font-size: 1.1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.form-container button:hover {
-    background: #e65b50;
-}
-
-.toggle-text {
-    margin-top: 15px;
-    font-size: 0.9rem;
     color: #555;
+    margin-bottom: 15px;
 }
 
-.toggle-text a {
+.success-container a {
     color: #ff6f61;
     text-decoration: none;
     font-weight: bold;
 }
 
-.toggle-text a:hover {
+.success-container a:hover {
     text-decoration: underline;
 }
 
-.hidden {
-    display: none;
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e65b50;
 }
