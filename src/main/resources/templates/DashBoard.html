@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Restaurant Management System</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="dashboard-container">
+    <aside class="sidebar">
+        <h2>Restaurant Manager</h2>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Staff</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a th:href="@{/signin}" class="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header>
+            <h1>Welcome, <span th:text="${userName}">User</span>!</h1>
+            <p>Manage your restaurant operations efficiently.</p>
+        </header>
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Today's Orders</h3>
+                <p>25</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Staff</h3>
+                <p>8</p>
+            </div>
+            <div class="stat-card">
+                <h3>Revenue Today</h3>
+                <p>$1,250</p>
+            </div>
+        </section>
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="action-buttons">
+                <a href="#" class="btn">Add New Order</a>
+                <a href="#" class="btn">Update Menu</a>
+                <a href="#" class="btn">View Reports</a>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
